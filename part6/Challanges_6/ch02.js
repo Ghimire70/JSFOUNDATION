@@ -15,4 +15,4 @@ function Person(name, age) {
   };
 }
 let person1 = new Person("Alice", 30);
-console.log(person1.greet()); // "Hello, my name is Alice" 
+console.log(person1.greet()); // "Hello, my name is Alice"
