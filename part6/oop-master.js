@@ -72,9 +72,9 @@ class BankAccount {
 }
 
 let account = new BankAccount();
-// console.log(account.getBalance());
-
+console.log(account.getBalance());
 */
+
 
 //Abstraction
 class CoffeMachine {
