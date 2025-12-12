@@ -99,7 +99,6 @@ let myMachine = new CoffeMachine();
 // console.log(myMachine.pressStartButton());
 
 //Polymorphism
-
 class Bird {
   fly() {
     return `Flying bird....`;
