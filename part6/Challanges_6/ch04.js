@@ -60,7 +60,7 @@ let penguin = new Penguin();
 
 class Shape {
   area() {
-    return "0";
+    return 0;
   }
 }
 class Circle extends Shape {
