@@ -64,20 +64,27 @@ class Shape {
   }
 }
 class Circle extends Shape {
-  area() {
-    return "The area of circle";
+  constructor(radius) {
+    super();
+    this.radius = radius;
+  }
+  area(){
+    return Math.PI * this.radius * this.radius;
   }
 }
 class Rectangle extends Shape {
+  constructor(length, width) {
+    super();
+    this.length = length;
+    this.width = width;
+  }
   area(){
-    return "The area of rectangle"
+    return this.length * this.width;
   }
 }
 
-let shape = new Shape();
-let circle = new Circle();
-let rectangle = new Rectangle();
-console.log(circle.area());
-console.log(rectangle.area());
-
+let circle = new Circle(5);
+let rectangle = new Rectangle(4, 6);
+console.log(`Area of Circle: ${circle.area()}`);
+console.log(`Area of Rectangle: ${rectangle.area()}`);
 
