@@ -68,7 +68,7 @@ class Circle extends Shape {
     super();
     this.radius = radius;
   }
-  area(){
+  area() {
     return Math.PI * this.radius * this.radius;
   }
 }
@@ -78,7 +78,7 @@ class Rectangle extends Shape {
     this.length = length;
     this.width = width;
   }
-  area(){
+  area() {
     return this.length * this.width;
   }
 }
