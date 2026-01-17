@@ -13,7 +13,7 @@
             text-align: center;
         }
 
-        .hightlight {
+        .highlight {
             background-color: yellow;
             font-weight: bold;
             color: #1a1a1a;
@@ -31,10 +31,10 @@
     <!-- Example 1: Accessing DOM elements -->
     <section id="example-1">
         <h2>Acessing DOM Elements</h2>
-        <p id="myparagraph">
+        <p id="myParagraph">
             This is a paragraph. Click the button to change me!
         </p>
-        <button class="changeTextButton">Change Text</button>
+        <button id="changeTextButton">Change Text</button>
     </section>
 
     <!-- Example 2: Traversing the DOM -->
@@ -46,13 +46,15 @@
             <li>Paris</li>
             <li>London</li>
         </ul>
-        <button class="highlightFirstCity">Highlight First City</button>
+        <button id="highlightFirstCity">Highlight First City</button>
     </section>
 
     <!-- Example 3: Manipulating DOM Elements -->
     <section id="example-3">
         <h2>Manipulating DOM Elements</h2>
-        <div id="coffeOrder">Order: <span id="coffeType">Latte</span></div>
+        <div id="coffeOrder">Order:
+            <span id="coffeType">Latte</span>
+        </div>
         <button id="changeOrder">Change Order to Espresso</button>
     </section>
 
@@ -117,7 +119,6 @@
         <p id="descriptionText">This text will change color!</p>
         <button id="toggleHighlightButton">Toggle Highlight</button>
     </section>
-
 
     <script src="/part8/script.js"></script>
 </body>
