@@ -44,3 +44,6 @@ document
     let taskList = document.getElementById("taskList");
     taskList.lastElementChild.remove();
   });
+
+//Example 6
+
