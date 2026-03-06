@@ -9,20 +9,30 @@
 // Shape and adds properties width and height.
 // Add a method getArea() to Rectangle that returns the area of the rectangle.
 
-function Animal(name, sound) {
-  this.name = name;
-  this.sound = sound;
+class Animal {
+  constructor(name, sound) {
+    this.name = name;
+    this.sound = sound;
+  }
+
+  makeSound() {
+    console.log(`${this.name} says: ${this.sound}!`);
+  }
+}
+class Dog extends Animal {
+  constructor(name) {
+    super(name, "Woof");
+  }
+  bark() {
+    console.log(`${this.name} fetches the ball! \nThe rex says ${this.sound}.`);
+  }
 }
 
-Animal.prototype.makeSound = function () {
-  console.log(`${this.name} says: ${this.sound}!`);
-};
-
-
-
-//usage
+//usage------------------------------------
 // const dog = new Animal("Dog", "Woof");
 // const cat = new Animal("Cat", "meow");
-
 // dog.makeSound();
 // cat.makeSound();
+
+const dog = new Dog("Rex");
+dog.bark();
