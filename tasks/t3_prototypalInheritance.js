@@ -10,6 +10,7 @@
 // Add a method getArea() to Rectangle that returns the area of the rectangle.
 
 /*
+// Task 1: Create Inheritance Using Prototypes
 class Animal {
   constructor(name, sound) {
     this.name = name;
@@ -39,3 +40,8 @@ class Dog extends Animal {
 // dog.bark();
 */
 
+// Task 2: Shape and Rectangle Inheritance
+
+function Shape(color) {
+  this.color = color;
+}
