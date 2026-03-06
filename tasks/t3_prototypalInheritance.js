@@ -18,6 +18,8 @@ Animal.prototype.makeSound = function () {
   console.log(`${this.name} says: ${this.sound}!`);
 };
 
+
+
 //usage
 // const dog = new Animal("Dog", "Woof");
 // const cat = new Animal("Cat", "meow");
