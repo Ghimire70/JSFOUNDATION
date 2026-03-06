@@ -45,3 +45,27 @@ class Dog extends Animal {
 function Shape(color) {
   this.color = color;
 }
+
+Shape.prototype.getColor = function () {
+  return `${this.color}`;
+};
+
+class Rectangle extends Shape {
+  constructor(color, width, height) {
+    super(color);
+    this.width = width;
+    this.height = height;
+  }
+
+  getArea() {
+    const area = this.width * this.height;
+    console.log(
+      `The rectangle with height ${this.height} and width ${this.width} has its area ${area}\nAnd its color is ${this.getColor()}`,
+    );
+  }
+}
+
+//usage------------------------------------
+const rectangle = new Rectangle("blue", 5, 10);
+rectangle.getArea();
+rectangle.getColor();
