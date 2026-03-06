@@ -9,6 +9,7 @@
 // Shape and adds properties width and height.
 // Add a method getArea() to Rectangle that returns the area of the rectangle.
 
+/*
 class Animal {
   constructor(name, sound) {
     this.name = name;
@@ -34,5 +35,7 @@ class Dog extends Animal {
 // dog.makeSound();
 // cat.makeSound();
 
-const dog = new Dog("Rex");
-dog.bark();
+// const dog = new Dog("Rex");
+// dog.bark();
+*/
+
