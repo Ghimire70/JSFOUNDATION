@@ -11,9 +11,22 @@
 // access a multiplier value. Then, invoke sum() with different contexts
 // using apply(), passing the numbers as an array.
 
-person = {
+const person = {
   name: "DJ.cherry",
   introduce() {
     console.log(`Hi nice to meet you!\nThey call me ${this.name}.`);
   },
 };
+
+//raw introduce
+const rawIntroduce = person.introduce;
+console.log(rawIntroduce);
+
+const boundIntroduce = person.introduce.bind(person);
+console.log(boundIntroduce());
+
+//practical method by passing to another function
+// function callIntroduction(fn){
+//   return fn();
+// }
+// console.log(callIntroduction(boundIntroduce));
