@@ -11,6 +11,8 @@
 // access a multiplier value. Then, invoke sum() with different contexts
 // using apply(), passing the numbers as an array.
 
+/*
+//Task1
 const person = {
   name: "DJ.cherry",
   introduce() {
@@ -22,6 +24,7 @@ const person = {
 const rawIntroduce = person.introduce;
 console.log(rawIntroduce);
 
+//bound introduce
 const boundIntroduce = person.introduce.bind(person);
 console.log(boundIntroduce());
 
@@ -30,3 +33,22 @@ console.log(boundIntroduce());
 //   return fn();
 // }
 // console.log(callIntroduction(boundIntroduce));
+*/
+
+/*
+//Task2
+
+function introduce() {
+  console.log(`Hi, my name is ${this.name}. I am ${this.age} years old`);
+}
+
+const person1 = { name: "Ray", age: 12 };
+const person2 = { name: "Shawn", age: 22 };
+const person3 = { name: "Dwan", age: 26 };
+
+introduce.call(person1);
+introduce.call(person2);
+introduce.call(person3);
+*/
+
+//Task 3
