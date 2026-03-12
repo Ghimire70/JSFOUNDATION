@@ -52,3 +52,16 @@ introduce.call(person3);
 */
 
 //Task 3
+
+function sum(a, b) {
+  const result = (a + b) * this.multiplier;
+  console.log(`(${a}+${b})*${this.multiplier} = ${result}`);
+}
+
+const context1 = { multiplier: 1 };
+const context2 = { multiplier: 2 };
+const context3 = { multiplier: 3 };
+
+sum.apply(context1, [2, 3]);
+sum.apply(context2, [3, 5]);
+sum.apply(context3, [4, 6]);
