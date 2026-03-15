@@ -4,7 +4,7 @@
 // Create a custom iterator called rangeIterator(start, end) that returns an object that iterates over numbers from start to end.
 // Each call to .next() should return the next number in the range until it reaches end.
 // Task 3: Generator Function for Fibonacci Sequence
-// Create a generator function fibonacciGenerator() that yields numbers from the Fibonacci 
+// Create a generator function fibonacciGenerator() that yields numbers from the Fibonacci
 // sequence indefinitely (1, 1, 2, 3, 5, 8, etc.).
 // Use the next() method to get the next Fibonacci number.
 
@@ -45,3 +45,25 @@ console.log(iter.next());
 */
 
 //Task3: Generator Function for Fibonacci Sequence
+function* fibonacciGenerator() {
+  let a = 1,
+    b = 1;
+
+  while (true) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
+
+const fib = fibonacciGenerator();
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
+console.log(fib.next().value);
