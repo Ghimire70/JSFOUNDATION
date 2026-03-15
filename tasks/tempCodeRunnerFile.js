@@ -1,3 +1,0 @@
-const iter = rangeIterator();
-
-// log;
