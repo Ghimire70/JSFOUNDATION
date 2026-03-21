@@ -68,4 +68,4 @@ console.log(fib.next().value);
 console.log(fib.next().value);
 console.log(fib.next().value);
 
-//js foundation
+//js foundation ends
